@@ -44,7 +44,7 @@ public class PruebasUnitariasArreglos {
     
     @Test
     public void pruebaSuma2nulo(){
-        float[] entrada=null;
+        float[] entrada={};
         float salidaEsperada=0f;
         
         float salidaReal=opa.calcularSuma(entrada);
@@ -62,7 +62,7 @@ public class PruebasUnitariasArreglos {
     
     @Test
     public void pruebaPrimedio2nulo(){
-        float[] entrada=null;
+        float[] entrada={};
         float salidaEsperada=0f;
         
         float salidaReal=opa.calcularPromedio(entrada);
@@ -80,7 +80,7 @@ public class PruebasUnitariasArreglos {
     
     @Test
     public void pruebaLimite2null(){
-        float[] entrada= null;
+        float[] entrada= {};
         float lim=5f;
         float salidaEsperada=0f;
         
@@ -99,7 +99,7 @@ public class PruebasUnitariasArreglos {
     
     @Test
     public void pruebaInvertidos2nulo(){
-        float[] entrada=null;
+        float[] entrada={};
         float[] salidaEsperada={};
         
         float[] salidaReal= opa.RecorridoInvertido(entrada);
@@ -117,7 +117,7 @@ public class PruebasUnitariasArreglos {
     
     @Test
     public void pruebaAbsoluto2nulo(){
-        float[] entrada=null;
+        float[] entrada={};
         float[] salidaEsperada={};
         float[] salidaReal= opa.ArregloAbsoluto(entrada);
         assertArrayEquals(salidaEsperada,salidaReal);

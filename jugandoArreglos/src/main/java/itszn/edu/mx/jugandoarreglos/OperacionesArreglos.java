@@ -20,10 +20,15 @@ public class OperacionesArreglos {
     
     public float calcularPromedio(float[] num) {
         float suma = 0f;
+        float promedio = 0f;
+        if(num.length > 0){
+            
         for (int i = 0; i < num.length; i++) {
             suma = suma + num[i];
         }
-        return suma / num.length;
+        promedio = suma/((float)num.length);
+        }
+        return promedio;
     }
     public int recorridoLimite(float[] num, float limite) {
         int contador = 0;
