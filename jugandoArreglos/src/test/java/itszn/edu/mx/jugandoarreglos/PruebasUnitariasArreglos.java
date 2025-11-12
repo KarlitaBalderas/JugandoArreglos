@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
  */
+package itszn.edu.mx.jugandoarreglos;
 
-import itszn.edu.mx.jugandoarreglos.OperacionesArreglos;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -17,6 +18,7 @@ public class PruebasUnitariasArreglos {
     public PruebasUnitariasArreglos() {
 
     }
+    
     private OperacionesArreglos opa;
     @BeforeEach
     public void setUp() {
@@ -92,7 +94,7 @@ public class PruebasUnitariasArreglos {
         float[] salidaEsperada={7.8f,5.6f,3.4f,1.2f};
         
         float[] salidaReal= opa.RecorridoInvertido(entrada);
-        assertEquals(salidaEsperada,salidaReal);
+        assertArrayEquals(salidaEsperada,salidaReal);
     }
     
     @Test
@@ -101,7 +103,7 @@ public class PruebasUnitariasArreglos {
         float[] salidaEsperada={};
         
         float[] salidaReal= opa.RecorridoInvertido(entrada);
-        assertEquals(salidaEsperada,salidaReal);
+        assertArrayEquals(salidaEsperada,salidaReal);
     }
     
     @Test
@@ -110,7 +112,7 @@ public class PruebasUnitariasArreglos {
         float[] salidaEsperada={2f, 3f, 4f, 5f};
         
         float[] salidaReal= opa.ArregloAbsoluto(entrada);
-        assertEquals(salidaEsperada,salidaReal);
+        assertArrayEquals(salidaEsperada,salidaReal);
     }
     
     @Test
@@ -118,7 +120,7 @@ public class PruebasUnitariasArreglos {
         float[] entrada=null;
         float[] salidaEsperada={};
         float[] salidaReal= opa.ArregloAbsoluto(entrada);
-        assertEquals(salidaEsperada,salidaReal);
+        assertArrayEquals(salidaEsperada,salidaReal);
     }
 }
 
