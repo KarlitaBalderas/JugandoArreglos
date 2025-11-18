@@ -26,7 +26,7 @@ stages{
       }
       post{
         always{
-            junit 'jugandoArreglos/target/surefire-reports/*.jar'
+            junit 'jugandoArreglos/target/surefire-reports/*.xml'
         }
       }
     }
