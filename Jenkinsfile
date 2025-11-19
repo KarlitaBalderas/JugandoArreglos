@@ -6,7 +6,7 @@ pipeline{
 triggers{
   githubPush()
 }
-enviroment{
+environment{
       POM="jugandoArreglos/pom.xml"
 }
 stages{
@@ -17,7 +17,7 @@ stages{
     }
     stage('Compilacion'){
       steps{
-          sh 'mvn - f $POM -B'
+          sh 'mvn -f $POM -B package'
       }
     }
     stage('Prueba'){
